@@ -13,7 +13,7 @@ typedef struct {
 
 static ngx_command_t  ngx_emp_check_commands[] = {
     { ngx_string("emp_check"),
-      NGX_HTTP_LOC_CONF|NGX_CONF_TAKE1,
+      NGX_HTTP_LOC_CONF|NGX_CONF_NOARGS,
       ngx_emp_check_readconf,
       NGX_HTTP_LOC_CONF_OFFSET,
       offsetof(ngx_emp_check_loc_conf_t, ecdata),
