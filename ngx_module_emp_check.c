@@ -57,7 +57,7 @@ static ngx_int_t
 ngx_emp_check_handler(ngx_http_request_t *r)
 {
     printf("called:ngx_emp_check_handler\n");
-    return NGX_OK;
+    return NGX_ERROR;
 }
 static char *
 ngx_emp_check_readconf(ngx_conf_t *cf, ngx_command_t *cmd, void *conf)
